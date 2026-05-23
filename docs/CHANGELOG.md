@@ -5,6 +5,7 @@ This update improves the analysis module.
 
 - Cleaned the analysis module
 - Updated statistics calculations
+- Added descriptions to algorithms
 
 ## Version 3.0.0 - (2026-02)
 This update brings significant improvements to overall code clarity and efficiency.
