@@ -1,4 +1,4 @@
-# Tetris Agent
+# Heuristic Optimization and Performance Analysis for Autonomous Tetris Agents
 
 A fast, lightweight **Tetris implementation** written in C with several heuristic algorithms and performance analysis tools. 
 Built as a TIPE project for the 2026 French MPI engineering entrance exams.
