@@ -1,5 +1,8 @@
 #include "driver.h"
 
+void display_header(){
+    printf("TIPE INTERFACE v%s \n\n", TIPE_VERSION);
+}
 
 void execute_algorithm(Game* g, Piece* p, int n, int depth){
     Piece* result = NULL;
@@ -73,6 +76,17 @@ int run_single_game_loop(Game* g, int nb_algorithm, int depth){
 int run_single_game(){
     Game* g = game_init();
 
+    system("clear");
+    display_header();
+    printf("Available Algorithms:\n"
+       "  1. Naive Top-Down Stacking (Column 0)\n"
+       "  2. Random Position Search\n"
+       "  3. Greedy Local Optimization (Basic Heuristic)\n"
+       "  4. 1-Ply Game Simulation (Intermediate Heuristic)\n"
+       "  5. 1-Ply Game Simulation (Advanced Heuristic)\n"
+       "  6. Expectimax Lookahead (N-Depth Average Outcome)\n"
+       "  7. Bag-Aware Expectimax (N-Depth with Piece Prediction)\n\n");
+
     int depth = 0;
     int nb_algorithm =  read_int_in_range("Algorithm number (1-7): ", 1, NB_ALGORITHMS);
     if (nb_algorithm > 5){
@@ -90,11 +104,6 @@ int run_single_game(){
     return 0;
     
 }
-
-void display_header(){
-    printf("TIPE INTERFACE v%s \n\n", TIPE_VERSION);
-}
-
 
 void run_application_menu(){
     system("clear");
