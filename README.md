@@ -17,6 +17,9 @@ This project implements a Tetris game engine in C along with several agents that
 - Optimizations using next-piece prediction to significantly reduce computation time
 - A robust analysis module to benchmark algorithm performance over thousands of games
 
+## Theory
+
+The problem was modelised using [Markov decision process](https://en.wikipedia.org/wiki/Markov_decision_process).
 
 ## Building
 
