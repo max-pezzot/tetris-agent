@@ -75,9 +75,7 @@ int run_single_game_loop(Game* g, int nb_algorithm, int depth){
 
 int run_single_game(){
     Game* g = game_init();
-
-    // À la place de : system("clear");
-(void)system("clear");
+    (void)system("clear");
     display_header();
     printf("Available Algorithms:\n"
        "  1. Naive Top-Down Stacking (Column 0)\n"
@@ -93,8 +91,8 @@ int run_single_game(){
     if (nb_algorithm > 5){
         depth =  read_int_in_range("Depth of thinking : ", 0, NB_ALGORITHMS);
     }
-    // À la place de : system("clear");
-(void)system("clear");
+    
+    (void)system("clear");
 
     int nb_run = run_single_game_loop(g, nb_algorithm, depth);
 
@@ -108,8 +106,7 @@ int run_single_game(){
 }
 
 void run_application_menu(){
-    // À la place de : system("clear");
-(void)system("clear");
+    (void)system("clear");
     display_header();
     printf("Application mode : \n 1. Testing \n 2. Analysis\n\n");
     int mode = read_int_in_range("Preferred mode (1-2): ", 1, 2);
