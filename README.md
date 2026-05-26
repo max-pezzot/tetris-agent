@@ -44,7 +44,7 @@ gcc -O3 -Wall code/main.c code/*/*.c -o tetris_agent
 
 *(You can also use the Makefile by typing `make`).*
 
-### Running the System
+### Run
 
 The application binary ships with a built-in evaluation and data analysis manager:
 
